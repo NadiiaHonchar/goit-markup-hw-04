@@ -132,8 +132,11 @@ img
 .link-nav:hover,
 .link-nav:focus,
 .link-contact:hover,
-.link-contact:focus 
+.link-contact:focus
 { color: var(--secondary-linc-color);}
+
+.active{color: var(--secondary-linc-color);}
+
 
 .contact-nav
 {
@@ -143,6 +146,8 @@ img
 
 .link-contact 
 {
+  display: flex;
+  align-items: center;
   color: var(--primary-text-color);
   text-decoration: none;
   font-weight: 500;
@@ -151,7 +156,10 @@ img
 }
 
 .icon-hower
-{fill: currentColor}
+{
+  fill: currentColor;
+  margin-right: 10px;
+}
 
 .hero 
 {
@@ -291,14 +299,17 @@ img
 {
   background-color: var(--primary-page-color);
   padding-top: 30px;
-  padding-bottom: 16px;
+  padding-bottom: 30px;
   border-radius: 0px 0px 4px 4px;
 }
 
-.social-network{display: flex;
-background-color: var(--hero-text-color);
-justify-content: center;
-padding-bottom: 30px;}
+.social-network
+{
+  display: flex;
+  background-color: var(--hero-text-color);
+  justify-content: center;
+  margin-top: 16px;
+}
 
   
 .icon-network
@@ -323,8 +334,8 @@ padding-bottom: 30px;}
 .icon-network:focus
 { background-color: var(--button-color) ;}
 
-.icon-contact-network:hover,
-.icon-contact-network:focus
+.icon-network:hover >.icon-contact-network,
+.icon-network:focus >.icon-contact-network
 {fill: var(--hero-text-color);}
 
 .cards-list
@@ -342,11 +353,9 @@ padding-bottom: 30px;}
   outline: 1px solid #EEEEEE;
 }
 
-.cards-item:hover,
-.cards-item:focus
-{
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+.display-blok:hover,
+.display-blok:focus
+{box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);}
 
 .cards-item:nth-child(3n){margin-right: 0;}
 
@@ -391,8 +400,10 @@ padding-bottom: 30px;}
   border: none;
 }
 
+
 .button:hover,
-.button:focus
+.button:focus,
+.carrent
 {
   background-color: var(--button-color);
   color: var(--header-color);
@@ -421,11 +432,13 @@ padding-bottom: 30px;}
 
 .clients-list{display: flex;}
 
+.margin-clients{display: flex;}
+
 .clients
 {
   width: 170px;
   height: 92px;
-  background-color: var(--secondary-page-color);
+  background-color: var(--primary-page-color);
   border-radius: 4px;
   padding-left: 32px;
   padding-right: 32px;
@@ -446,8 +459,8 @@ padding-bottom: 30px;}
   margin: auto; 
 }
 
-.bacground-clients:hover,
-.bacground-clients:focus
+.clients:hover>.bacground-clients,
+.clients:focus>.bacground-clients
 {fill: var(--secondary-linc-color);}
 
 .clients:focus,
